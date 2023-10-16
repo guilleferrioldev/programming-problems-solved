@@ -13,7 +13,6 @@ class Solution:
         return ':;'.join(strs)
     
     def decode(self, string: str) -> List[str]:
-        # write your code here
         return string.split(":;")
 
 if __name__ == "__main__":
