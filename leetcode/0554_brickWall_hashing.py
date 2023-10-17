@@ -13,6 +13,9 @@ Given the 2D array wall that contains the information about the wall, return the
 crossed bricks after drawing such a vertical line.
 """
 
+# Runtime: 121ms (Beats 87.14% of users with Python)
+# Memory: 18.5MB (Beats 69.29% of users with Python)
+
 from typing import List
 
 class Solution(object):
