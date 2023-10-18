@@ -9,9 +9,9 @@ from typing import List, Tuple
 class Solution:
     def findPair(self, nums : List[int], target: int) -> set[Tuple[int]]:
         
-        hashset: set(Tuple[int]) = set(nums)
+        hashset: set[Tuple[int]] = set(nums)
         # take an empty set 
-        result: set = set()
+        result: set[int] = set()
     
         for num in hashset:
             # check if pair with the given difference exists

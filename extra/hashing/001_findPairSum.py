@@ -11,7 +11,7 @@ class Solution:
         # create an empty set
         result: List[List[int]] = set()
         # create an empty dictionary
-        hashtable: dict = dict()
+        hashtable: dict[int, int] = dict()
 
         for index, value in enumerate(nums):
             diff = target - value

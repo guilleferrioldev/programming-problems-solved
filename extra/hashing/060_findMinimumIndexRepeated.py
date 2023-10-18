@@ -10,9 +10,9 @@ from collections import Counter
 
 class Solution:
     def findMinIndex(self, nums: List[int]) -> int:
-        minIndex = -1
+        minIndex: int = -1
         # create an empty set to store list elements
-        s = set()
+        s: set[int] = set()
  
         # traverse the list from right to left
         for index in reversed(range(len(nums))): 
