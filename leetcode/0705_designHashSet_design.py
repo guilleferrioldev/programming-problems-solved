@@ -41,7 +41,7 @@ class MyHashSet(object):
         cur.next = ListNode(key)
 
     def remove(self, key: int) -> None:
-        # Only save within that length
+        # Only remove within that length
         cur = self.set[key % len(self.set)]
 
         while cur.next:
