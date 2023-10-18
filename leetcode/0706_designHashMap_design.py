@@ -18,12 +18,14 @@ void remove(key) removes the key and its corresponding value if the map contains
 from typing import List
 
 class ListNode:
+    """Class to create nodes in the linked list inside the hashmap"""
     def __init__(self, key=-1, val=-1, next=None):
         self.key = key
         self.val = val
         self.next = next
 
 class MyHashMap(object):
+    """Implementing the hashmap"""
     def __init__(self) -> None:
         # The maximum length of the hashmap will be 1000 to store values
         self.map: List[ListNode] = [ListNode() for i in range(1000)]
@@ -31,6 +33,7 @@ class MyHashMap(object):
     def put(self, key: int, value: int) -> None:
         # Only save within than lenght 
         cur = self.map[key % len(self.map)]
+        
         while cur.next: 
             # If the next key of the current position matches the key you want to add,
             if cur.next.key == key:
