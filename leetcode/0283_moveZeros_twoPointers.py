@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         # Variable to mark the first position
-        marker = 0
+        marker: int = 0
 
         for pos in range(len(nums)):
             # if the current position is other than 0 and the marker is equal to 0
