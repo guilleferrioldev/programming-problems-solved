@@ -11,8 +11,7 @@ from typing import List
 
 class Solution(object):
     def rotate(self, nums: List[int], k: int) -> None:
-        nums = nums
-        k = k % len(nums)
+        k: int = k % len(nums)
         
         # Swap the k positions with the -k ones [:k] <=> [-k:]
         start , end = 0, len(nums) - 1
@@ -31,8 +30,6 @@ class Solution(object):
         while middle_start < end:
             nums[middle_start], nums[end] = nums[end], nums[middle_start]
             middle_start, end = middle_start + 1, end - 1
-        
-        return nums
 
 if __name__ == "__main__":
     solution = Solution()
@@ -41,10 +38,3 @@ if __name__ == "__main__":
     s2 = solution.rotate([-1,-100,3,99], 2)
     s3 = solution.rotate([-1], 2)
     s4 = solution.rotate([1], 0)
-    
-    print(s1, s2, s4, s4)
-
-
-
-
-
