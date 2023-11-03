@@ -52,11 +52,10 @@ def solve_sudoku(board):
 def main(board):
     solution = solve_sudoku(board)
     if solution is not None:
-        print("Solución encontrada:")
         for row in solution:
             print(row)
     else:
-        print("no se encontró solución para el Sudoku.")
+        print("no solution found")
 
 
 if __name__ == "__main__":
