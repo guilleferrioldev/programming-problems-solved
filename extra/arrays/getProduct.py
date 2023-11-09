@@ -4,9 +4,10 @@ at i."""
 
 from operator import mul
 from functools import reduce
+from typing import List
 
 class Solution:
-    def getProduct(self, nums):
+    def getProduct(self, nums: List[int]) -> List[int]:
         total = reduce(mul, nums)
         result = []
 
